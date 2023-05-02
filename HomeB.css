@@ -1,0 +1,368 @@
+body{
+    background-repeat: no-repeat; 
+    background-position: center center;
+    background-size: cover;
+    display: block;
+    overflow-y:auto;
+    overflow: visible;
+    overflow-x:auto;
+    background-image: url('https://th.bing.com/th/id/R.c6c4f5552709d5c7368daef461057e78?rik=d8Mvjpb1GjqqLA&riu=http%3a%2f%2fgetwallpapers.com%2fwallpaper%2ffull%2fd%2f6%2f7%2f915527-new-nature-hd-desktop-wallpaper-1920x1200.jpg&ehk=aGsUeaS6WCYeU8TWAglgYoLI8oMh1L59W4l0xKlLohc%3d&risl=&pid=ImgRaw&r=0');
+    /* width: 100%; */
+    height: 400px;
+}
+html{
+    background-color: #A3E4D7;
+   
+}
+
+.icon-container > img {
+    /* animation: spin 3s linear infinite; */
+    animation: bounce 2s ease-in-out infinite;
+}
+/* @keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+} */
+@keyframes bounce{
+    0%, 100% { transform: translateY(0);}
+    50% { transform: translateY(-10px);}
+    
+}
+
+.Feedback{
+    border: 0px solid #FFFFFF;
+    width:fit-content;
+    height:fit-content;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    border-style: groove;
+    padding: 4px;
+    
+    
+    
+    border-color: #A3E4D7;
+    z-index: 1;
+   
+    
+        
+}
+.Feedback{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-shrink: 1;
+    flex-grow: 1;
+    flex-direction: column;
+}
+
+span{
+    font-size: 12pt;
+    font-family:serif;
+    text-decoration: none;
+}
+.button_group{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content:space-between;
+    align-items: center;
+    vertical-align: middle;
+    
+}
+.button_group button{
+    width: 35px;
+    height:30px;
+    background-color:yellow;
+    border-color: white;
+}
+/* button{
+    width:35px;
+    height:30px;
+} */
+.alert-box{
+    /* padding: 10px; */
+    /* margin-top: 40px; */
+    border: 2px solid #EBF5FB;
+    width: fit-content;
+    height:fit-content;
+    background-color: #EBF5FB;
+    position: absolute;
+    border-style: groove;
+    border-color: #EBF5FB;
+    /* box-shadow: 1px 0px #EBF5FB; */
+    
+}
+.alert-box{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    font-size: 12pt;
+    justify-content: baseline;
+    background-color:#FFFFFF;
+    border-color: #FFFFFF;
+    border-style: none;
+    border: none;
+    padding:5px;
+}               
+.close-btn{
+    width:20px;
+    height: 20px;
+    border: 1px solid #EBF5FB ;
+    /* background-color: #EBF5FB ; */
+    /* padding: 1px 1px; */
+    border-style: none;
+}
+.close-btn:hover{
+    background-color: grey;
+}
+
+.container_icon {
+    /* background-color:lightblue; */
+    border: 0px solid black;
+    position:absolute;
+    display:flexbox;
+    width: 58px; 
+    top:0px;
+    left:0;
+    /* bottom:0; */
+    align-items: center;
+    justify-content: center;
+    
+}
+.hicon1 
+{
+    /* display:flex; */
+    position: absolute;
+    top: 90px;
+    display: flex;
+    background-color:#FFFFFF;
+    width: 47px;
+    height: 47px;
+    border-style:ridge;
+    padding:4px;
+    border-radius: 8px 8px;
+    /* border-color:white; */
+    vertical-align: middle;
+    align-items: center;
+    border: 2px solid #FFFFFF ;
+
+}
+.hicon1 svg{
+    padding: 2px;
+}
+.hicon2
+{
+    position: absolute;
+    top: 152px;
+    display: flex;
+    background-color:#FFFFFF;
+    width: 45px;
+    height: 47px;
+    border-style:ridge;
+    padding:4px;
+    border-radius: 8px 8px;
+    vertical-align: middle;
+    align-items:center;
+    border: 2px solid #FFFFFF ;
+} 
+.hicon2 svg{
+    padding: 2px;
+}
+ 
+.hicon2 >.booklink2
+{
+    color:white;
+    text-decoration: none;
+}
+.hicon3
+{
+    position:absolute;
+    top: 216px;
+    display: flex;
+    background-color:#FFFFFF;
+    width: 45px;
+    height: 47px;
+    border-style:ridge;
+    padding:5px;
+    border-radius: 8px 8px;
+    vertical-align: middle;
+    align-items: center;
+    border: 2px solid #FFFFFF ;
+}
+.hicon3 svg{
+    padding: 2px;
+}
+/* .hicon1:hover::before
+{
+    
+    content:"Home";
+    position: absolute;
+    top:100%;
+} */
+.hicon2:hover::before
+{
+  
+    content:"Book";
+    position: absolute;
+    top:100%;
+}
+/* .hicon3:hover::before
+{
+    
+    content:"email";
+    position: absolute;
+    top:100%;
+} */
+.hicon4
+{
+    position: absolute;
+    top:280px;
+    left:0px;
+    background-color:#FFFFFF;
+    display: flex;
+    width: 45px;
+    height: 47px;
+    border-style:ridge;
+    padding:5px;
+    border-radius: 8px 8px;
+    vertical-align: middle;
+    align-items: center;
+    border: 2px solid #FFFFFF ;
+}  
+.hicon4 svg{
+    padding: 2px;
+}
+/* .hicon4:hover::before
+{
+    content:"Explore";
+    position:absolute;
+    top:100%;
+}     */
+.hicon5
+{
+    position: absolute;
+    top:344px;
+    left:0px;
+    background-color:#FFFFFF;
+    width: 45px;
+    height: 47px;
+    border-style:ridge;
+    padding:4px;
+    border-radius: 8px 8px;
+    vertical-align: middle;
+    border: 2px solid #FFFFFF ;
+  
+}  
+/* .hicon5:hover::before
+{
+    content:"Facebook";
+    position:absolute;
+    top:100%;
+}    */    
+.container_icon .hicon1{
+    background-color: lightgreen;
+    align-items: center;
+    /* position: fixed; */
+    
+}
+.container_icon .hicon2{
+    background-color: lightgreen;
+    align-items: center;
+    /* position: fixed; */
+    
+}
+.container_icon .hicon4{
+    background-color: lightgreen;
+    align-items: center;
+    /* position: fixed; */
+    
+}
+.container_icon .hicon3{
+    background-color: lightgreen;
+    align-items: center;
+    /* position: fixed; */
+    
+}
+.container_icon .hicon5{
+    background-color: lightgreen;
+    align-items: center;
+    /* position: fixed; */
+    
+}
+.hicon1:hover{ background-color: #FFFFFF;}    
+.hicon2:hover{ background-color: #FFFFFF;}    
+.hicon3:hover{ background-color: #FFFFFF;}    
+.hicon4:hover{ background-color: #FFFFFF;}    
+.hicon5:hover{ background-color: #FFFFFF;}   
+
+#head 
+{
+    display: flex;
+    /* flex-direction: row; */
+    /* flex:0; */
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    
+    right: 5px;
+    top: 120px;
+    
+}
+#head > h2
+{
+    color:#FFFF00 ;
+    font-weight: bold;
+    font-size: 46pt;
+    margin:0;
+    border: 0px solid black;
+   
+}  
+ 
+#head > h4
+{
+    font-size: 20pt;
+    color:#FFFFFF;
+    margin: 17px 10px;
+    text-decoration: none;
+    text-decoration-style: none;
+    
+}
+#head > h3
+{
+    font-size: 36pt;
+    color:#FFFF00  ;
+    
+} 
+
+.maintxt
+{
+    color:black;
+    height:fit-content;
+    width: 60%;
+    /* background-color: rgb(187, 235, 15); */
+    border-radius: 13px;
+    /* line-height: 40px; */
+    text-align:justify;
+    /* font-weight: bold; */
+    font-size: 12pt;
+    padding: 4px;
+    font-family:cursive;
+    /* background-color:white; */
+    /* border-style: ridge; */
+    
+}
+.container-h-m{
+    
+    position: relative;
+    /* position: absolute; */
+    top:60vh;
+  
+    margin: 0 auto;
+    /* border: 1px solid red; */
+    /* overflow-y: auto; */
+}
+.container-m{
+    /* position: relative; */
+    margin:0;
+    /* border: 1px solid green; */
+} 
+
+   
